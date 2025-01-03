@@ -1,13 +1,18 @@
 import { Button} from 'antd';
 import { useState } from 'react';
 import Cards from './card';
+import BgChanger from './bgChanger/BgChanger';
 function App() {
-const [counter,setCounter]=useState(15);
+const [counter,setCounter]=useState(0);
 
 
   const addValue=()=>{
     if(counter<20){
-     setCounter(counter+1)  
+     setCounter(prev=>prev+1)  
+     setCounter(prev=>prev+1)  
+     setCounter(prev=>prev+1)  
+     setCounter(prev=>prev+1)  
+     
     
     }else{
       return
@@ -31,8 +36,8 @@ const btnTxt={btTxt:"Hello"}
 
     <button className='bg-blue-400'   onClick={removeValue}>Remove value{counter}</button>
     </div> */}
-
-    <Cards buttonText="Hello Btn" btn={btnTxt}/>
+<BgChanger/>
+    {/* <Cards buttonText="Hello Btn" btn={btnTxt}/> */}
     </>
   )
 }

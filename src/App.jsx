@@ -2,6 +2,7 @@ import { Button} from 'antd';
 import { useState } from 'react';
 import Cards from './card';
 import BgChanger from './bgChanger/BgChanger';
+import PasswordGenerator from './passwordGeneRator/Passwordenerator';
 function App() {
 const [counter,setCounter]=useState(0);
 
@@ -36,8 +37,9 @@ const btnTxt={btTxt:"Hello"}
 
     <button className='bg-blue-400'   onClick={removeValue}>Remove value{counter}</button>
     </div> */}
-<BgChanger/>
+{/* <BgChanger/> */}
     {/* <Cards buttonText="Hello Btn" btn={btnTxt}/> */}
+    <PasswordGenerator/>
     </>
   )
 }

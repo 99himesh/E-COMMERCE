@@ -14,13 +14,10 @@ const PasswordGenerator=()=>{
         if(number) str+="0123456789"
        if(char) str+="!#$%&'()*+,-/"
        for(let i=1;i<length;i++){
-        let char=Math.floor(Math.random() * str.length + 1);
-        pass=pass+str.charAt(char);
+        let char=Math.floor(Math.random() * str?.length + 1);
+        pass=pass+str?.charAt(char);
         setPassword(pass)
        }
-
-
-      
    },[password,length,char,number])
 
    useEffect(()=>{
@@ -35,6 +32,7 @@ const PasswordGenerator=()=>{
             <div className="flex justify-center pt-3">
              <input 
                type="text"
+               readOnly
                value={password}
                placeholder="Enter Password"
                className="py-2 px-1 w-full border rounded-s-md"

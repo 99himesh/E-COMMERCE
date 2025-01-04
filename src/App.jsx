@@ -39,7 +39,8 @@ const btnTxt={btTxt:"Hello"}
     </div> */}
 {/* <BgChanger/> */}
     {/* <Cards buttonText="Hello Btn" btn={btnTxt}/> */}
-    <PasswordGenerator/>
+    {/* <PasswordGenerator/> */}
+    {/* <Header/> */}
     </>
   )
 }

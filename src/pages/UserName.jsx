@@ -3,6 +3,8 @@ import UserContext from "../context/UserContext";
 
 const UserName=()=>{
     const {User}=useContext(UserContext)
+
+    if(!User) return <p className="text-center">Please enter user</p>
     
    return(
    <>

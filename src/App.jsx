@@ -6,6 +6,7 @@ import PasswordGenerator from './passwordGeneRator/Passwordenerator';
 import Profile from './pages/Profile';
 import UserName from './pages/UserName';
 import UserContextProvider from './context/UserContextProvider';
+import Counter from './counter/Counter';
 function App() {
 const [counter,setCounter]=useState(0);
 
@@ -44,11 +45,12 @@ const btnTxt={btTxt:"Hello"}
     {/* <Cards buttonText="Hello Btn" btn={btnTxt}/> */}
     {/* <PasswordGenerator/> */}
     {/* <Header/> */}
-    <UserContextProvider>
+    {/* <UserContextProvider>
       
     <Profile/>
     <UserName/>
-    </UserContextProvider>
+    </UserContextProvider> */}
+    <Counter/>
     </>
   )
 }
